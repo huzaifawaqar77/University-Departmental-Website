@@ -1,0 +1,59 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #607466;
+    overflow: hidden;
+    height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+.emblem_text{
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+}
+.navbar li:nth-child(1){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar li:not(:nth-child(1)):hover{
+    padding: 8px 16px;
+    border-radius: 1rem;
+    background-color: var(--bg-color-primary);
+    color: var(--bg-color-primary);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.navbar li:nth-child(1) p{
+    font-size: 2.2rem;
+    color: var(--button-color);
+    font-weight: bolder;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFEEEE;
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .navbar li {
+        margin: 0 5px;
+    }
+}

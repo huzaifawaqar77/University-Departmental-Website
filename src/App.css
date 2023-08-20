@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap');
+#root{
+  --my_font : 16px;
+  --bg-color-primary: #343E3D;
+  --bg-color-secondary: #607466;
+  --bg-color-tertiary: #607466;
+  --text-color-primary: #F2F2F2;
+  --text-color-secondary: #FFEEEE;
+  --button-color: #FAE052;
+  font-family: poppins;
+
+}
+body{
+  color: var(--text-color-secondary);
+  background: linear-gradient(to right,#607466 , #343E3D);
+  margin: 0px;
+  padding: 0px;
+}

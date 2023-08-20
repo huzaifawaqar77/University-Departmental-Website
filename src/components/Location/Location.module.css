@@ -1,0 +1,46 @@
+.location_component{
+    margin: 10px auto;
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.location_component > h1{
+    margin: 10px auto;
+}
+.location{
+    margin: 10px auto;
+    max-width: 1160px;
+    height: auto;
+    border-radius: 8px;
+}
+.location > img{
+  width: 100%;
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px){
+    .location_component{
+        margin: 1rem;
+        color: var(--text-color-secondary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .location_component > h1{
+        margin: 10px auto;
+    }
+    .location{
+        margin: 10px auto;
+        max-width: 1160px;
+        height: auto;
+        border-radius: 8px;
+    }
+    .location > img{
+      width: 100%;
+      border-radius: 8px;
+    }
+    .button{
+        padding: 8px 16px;
+        margin: 10px auto;
+    }
+}
