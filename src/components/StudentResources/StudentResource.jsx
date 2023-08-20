@@ -15,7 +15,10 @@ const StudentResource = () => {
             <h2>Learning Management System</h2>
           </div>
         </a>
-        <a href="https://lms.awkum.edu.pk/" target="_blank">
+        <a
+          href="https://www.youtube.com/channel/UCphpd6Yex5dXx2iAee5rBPg?sub_confirmation=1"
+          target="_blank"
+        >
           <div className={Styles.student_resource}>
             <img
               src="./icons/icons8-youtube-50.png"
@@ -65,7 +68,10 @@ const StudentResource = () => {
             <h2>Semester Details</h2>
           </div>
         </a>
-        <a href="https://lms.awkum.edu.pk/" target="_blank">
+        <a
+          href="https://www.facebook.com/groups/1519124071733232/?ref=share&mibextid=aE13LE"
+          target="_blank"
+        >
           <div className={Styles.student_resource}>
             <img
               src="./icons/icons8-facebook-50.png"
