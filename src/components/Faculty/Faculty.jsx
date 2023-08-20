@@ -1,4 +1,5 @@
 import Styles from "./Faculty.module.css";
+import { teachers } from "./FacultyStaff";
 const Faculty = () => {
   return (
     <div className={Styles.faculty_component}>
@@ -30,62 +31,15 @@ const Faculty = () => {
       </div>
       <h1>Faculty Tree Of Computer Science</h1>
       <div className={Styles.faculty_tree}>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty1.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Luther</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
+        {teachers.map((teacher) => (
+          <div key={teacher.name} className={Styles.faculty_person}>
+            <img src={teacher.imageSrc} alt="Faculty Staff" />
+            <div className={Styles.faculty_person_text_box}>
+              <h2>{teacher.name}</h2>
+              <img src="./icons/Arrow 8.svg" alt="arrow forward" />
+            </div>
           </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty2.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Rosie</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty3.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Marrisa</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty4.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Jason</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty5.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor John</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty6.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Bob</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty7.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Grey</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
-        <div className={Styles.faculty_person}>
-          <img src="./Faculty/faculty8.png" alt="" />
-          <div className={Styles.faculty_person_text_box}>
-            <h2>Professor Arthur</h2>
-            <img src="./icons/Arrow 8.svg" alt="" />
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

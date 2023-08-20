@@ -10,6 +10,7 @@ body, ul, li {
     background-color: #607466;
     overflow: hidden;
     height: 80px;
+    padding: 0 50px;
 }
 
 .navbar ul {
@@ -22,6 +23,14 @@ body, ul, li {
 .navbar li {
     margin: 0 10px;
 }
+.navbar > ul > li:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .emblem_text{
     font-size: 1rem;
     color: var(--text-color-secondary);
@@ -31,11 +40,11 @@ body, ul, li {
     align-items: center;
     justify-content: center;
 }
-.navbar li:not(:nth-child(1)):hover{
+.navbar > ul > li > a:hover{
     padding: 8px 16px;
     border-radius: 1rem;
     background-color: var(--bg-color-primary);
-    color: var(--bg-color-primary);
+    color: var(--text-color-secondary);
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
@@ -55,5 +64,19 @@ body, ul, li {
 @media (max-width: 768px) {
     .navbar li {
         margin: 0 5px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar {
+        padding: 0 5px;
+    }
+    .navbar > a{
+        font-size: 8px;
+    }
+    .navbar li:nth-child(1) p{
+        font-size: 1.5rem;
+    }
+    .emblem_text{
+        display: none;
     }
 }

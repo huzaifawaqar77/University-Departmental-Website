@@ -3,6 +3,9 @@
     max-width: 1160px;
     margin: 10px auto;
 }
+.landing_page > h2{
+  margin: 20px 0px;
+}
 .landing_page_image_component {
     margin-top: 50px;
     display: flex;
@@ -72,8 +75,10 @@
     right: 5%;
     transform: translate(0%, -50%);
     cursor: pointer;
-}
-.arrow_next:hover{
+    display: none;
+  }
+  .arrow_next:hover{
+  transform: rotate(180deg);
     transition: all .3s ease-in-out;
     transform: translate(0%, -50%) scale(1.1);
 }

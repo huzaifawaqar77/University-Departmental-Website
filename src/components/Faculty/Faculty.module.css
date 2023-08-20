@@ -1,21 +1,24 @@
 .faculty_component{
+    display: flex;
+    flex-direction: column;
     padding: 5px 50px;
     color: var(--text-color-secondary);
     margin: 10px auto;
     max-width: 1160px;
+    text-align: left;
 }
 .chairman_card{
     display: flex;
     gap: 30px;
     padding: 30px;
+    height: fit-content;
+    margin: 10px auto;
     background: rgba(160, 172, 163, 0.2);
     box-shadow: 6px 4px 4px -2px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    height: fit-content;
-    margin: 10px auto;
 }
 .chairman_card > img{
-    border-radius: 8px;
+    border-radius: 200px;
     height: 220px;
     width: 220px;
 }
@@ -27,8 +30,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+   
 }
 .chairman_name{
+    display: block;
     font-weight: bold;
     padding: 4px 8px;
     background-color: var(--bg-color-primary);
@@ -44,14 +49,22 @@
     border-radius: 8px;
     background-color: transparent;
 }
-.faculty_tree{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1160px;
-    margin: 10px;
+.button:hover{
+    background-color: var(--button-color);
+    color: var(--bg-color-primary);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
+
+.faculty_tree{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: linear-gradient(to right,var(--bg-color-primary), var(--bg-color-secondary), var(--bg-color-primary) );
+    justify-items: center;
+    padding: .5rem;
+    border-radius: 8px;
+}
+
 
 .faculty_person{
     padding: 25px;
@@ -61,14 +74,13 @@
     width: fit-content;
     height: fit-content;
     max-width: fit-content;
-    margin: 10px 0px;
+    margin: 10px 10px;
 }
-.faculty_person:nth-child(8){
-    align-self: flex-start;
-}
+
 .faculty_person:hover{
     transform: scale(1.05);
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 .faculty_person > img{
     height: 100%;
@@ -80,19 +92,24 @@
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width: 768px){
+.faculty_person_text_box > h2{
+    margin: 10px 0px;
+}
+@media screen and (min-width: 768px){
     .faculty_component{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 1rem;
+       
     }
     .faculty_tree{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        background: transparent;
+        gap: 8px;
     }
     .chairman_card{
         display: block;
@@ -102,9 +119,87 @@
         height: 180px;
         width: 180px;
     }
+    .faculty_person{
+        padding: 10px;
+    }
   
     .button{
         padding: 8px 16px;
         font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1060px){
+
+    .faculty_tree{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        background: linear-gradient(to right,var(--bg-color-primary), var(--bg-color-secondary), var(--bg-color-tertiary) );
+        justify-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+    .chairman_card{
+        display: block;
+        margin: 0px auto;
+    }
+    .chairman_card > img{
+        height: 180px;
+        width: 180px;
+    }
+    .faculty_person{
+        padding: 10px;
+    }
+  
+    .button{
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 480px){
+    .faculty_component{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .faculty_tree{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+    }
+    .chairman_card{
+        display: block;
+        align-self: stretch;
+        }
+    /* .chairman_card{
+        display: inline-block;
+        margin: 0px 10px;
+    } */
+    .chairman_card > img{
+        height: 100%;
+        width: 100%;
+    }
+  
+    .button{
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    .faculty_person{
+        padding: 8px;
+        margin: 8px;
+        width: 100%;
+    }
+    .chairman_card{
+    background: rgba(160, 172, 163, 0.2);
+    box-shadow: 6px 4px 4px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    }
+    .chairman_text_holder{
+        background-color: transparent;
+        box-shadow: none;
+        padding: none;
     }
 }

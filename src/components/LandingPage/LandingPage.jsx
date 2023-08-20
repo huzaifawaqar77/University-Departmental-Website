@@ -1,5 +1,9 @@
 import Styles from "./LandingPage.module.css";
 const LandingPage = () => {
+  const scrollToBottom = () => {
+    let height = document.body.scrollHeight;
+    window.scroll(0, height);
+  };
   return (
     <div className={Styles.landing_page}>
       <div className={Styles.landing_page_image_component}>
@@ -53,6 +57,7 @@ const LandingPage = () => {
         src="./icons/arrow-next.svg"
         alt="arrow next"
         className={Styles.arrow_next}
+        onClick={scrollToBottom}
       />
     </div>
   );

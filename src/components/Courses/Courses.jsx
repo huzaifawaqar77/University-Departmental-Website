@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Styles from "./Courses.module.css";
 const Courses = () => {
   return (
@@ -25,7 +26,12 @@ const Courses = () => {
           boundaries, unravel complexity, and shape the future by infusing
           technology with unprecedented levels of intellect and insight.
         </p>
-        <button className={Styles.button}>View Semester Details</button>
+        <a
+          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
+          target="_blank"
+        >
+          <button className={Styles.button}>View Semester Details</button>
+        </a>
       </div>
       <div className={Styles.course}>
         <img
@@ -49,7 +55,12 @@ const Courses = () => {
           elegant solutions, bridging imagination and technology to forge the
           digital landscapes of tomorrow.
         </p>
-        <button className={Styles.button}>View Semester Details</button>
+        <a
+          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
+          target="_blank"
+        >
+          <button className={Styles.button}>View Semester Details</button>
+        </a>
       </div>
       <div className={Styles.course}>
         <img
@@ -74,7 +85,12 @@ const Courses = () => {
           path that not only embraces the exciting advancements of today but
           also shapes the technological landscape of tomorrow.
         </p>
-        <button className={Styles.button}>View Semester Details</button>
+        <a
+          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
+          target="_blank"
+        >
+          <button className={Styles.button}>View Semester Details</button>
+        </a>
       </div>
       <div className={Styles.course}>
         <img
@@ -99,7 +115,12 @@ const Courses = () => {
           defenders who will play a pivotal role in upholding the integrity of
           the digital landscape.
         </p>
-        <button className={Styles.button}>View Semester Details</button>
+        <a
+          href="https://awkum.edu.pk/faculties-colleges/faculty-of-physical-numerical-sciences/cs-garden/programs/"
+          target="_blank"
+        >
+          <button className={Styles.button}>View Semester Details</button>
+        </a>
       </div>
     </div>
   );

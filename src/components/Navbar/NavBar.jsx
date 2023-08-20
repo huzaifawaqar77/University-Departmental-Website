@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Styles from "./NavBar.module.css";
 const NavBar = () => {
   return (
@@ -10,16 +11,12 @@ const NavBar = () => {
           </p>
         </li>
         <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">Faculty</a>
-        </li>
-        <li>
-          <a href="#">Courses</a>
-        </li>
-        <li>
-          <a href="#">Resources</a>
+          <a href="https://awkum.edu.pk/admissions/" target="_blank">
+            Admissions
+          </a>
+          <a href="https://lms.awkum.edu.pk/Login/index" target="_blank">
+            LMS
+          </a>
         </li>
       </ul>
     </div>
